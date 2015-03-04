@@ -1,4 +1,4 @@
-package com.liwei.uiversion1;
+package edu.ustc.medicalsystem;
 
 import java.util.ArrayList;
 import java.util.List;

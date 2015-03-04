@@ -1,6 +1,6 @@
 package edu.ustc.medicalsystem;
 
-import com.liwei.uiversion1.R;
+import edu.ustc.medicalsystem.R;
 
 import android.app.Activity;
 import android.content.Intent;
