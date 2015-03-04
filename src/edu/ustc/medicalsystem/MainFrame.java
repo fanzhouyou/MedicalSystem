@@ -1,9 +1,8 @@
-package edu.ustc.medicalsystem;
+package com.liwei.uiversion1;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.liwei.uiversion1.R;
 
 import android.app.ActivityGroup;
 import android.app.AlertDialog;
@@ -22,6 +21,11 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+/**
+ * @Description:主框架界面（页面底部四个导航栏）
+ * @author:liwei
+ * @time:2015-2-5 下午7:25:36
+ */
 public class MainFrame extends ActivityGroup {
 
 	private LinearLayout doctorBtn, pharmacistBtn, stateBtn, setBtn;
@@ -111,6 +115,8 @@ public class MainFrame extends ActivityGroup {
 			// arg0 获取 viewpager里面的界面切换到第几个的
 			@Override
 			public void onPageSelected(int arg0) {
+				// 先清除按钮样式
+				initBottemBtn();
 				// 按照对应的view的tag来判断到底切换到哪个界面。
 				// 更改对应的button状态
 				int flag = (Integer) list.get((arg0)).getTag();
@@ -185,18 +191,22 @@ public class MainFrame extends ActivityGroup {
 			case R.id.MyBottemDoctorBtn:
 				// //设置我们的viewpager跳转那个界面0这个参数和我们的list相关,相当于list里面的下标
 				mViewPager.setCurrentItem(0);
+				initBottemBtn();
 				mMyBottemSearchTxt.setTextColor(Color.parseColor("#FF8C00"));
 				break;
 			case R.id.MyBottemPharmacistBtn:
 				mViewPager.setCurrentItem(1);
+				initBottemBtn();
 				mMyBottemTuanTxt.setTextColor(Color.parseColor("#FF8C00"));
 				break;
 			case R.id.MyBottemStateBtn:
 				mViewPager.setCurrentItem(2);
+				initBottemBtn();
 				mMyBottemMyTxt.setTextColor(Color.parseColor("#FF8C00"));
 				break;
 			case R.id.MyBottemSetBtn:
 				mViewPager.setCurrentItem(3);
+				initBottemBtn();
 				mMyBottemMoreTxt.setTextColor(Color.parseColor("#FF8C00"));
 				break;
 			}
@@ -205,6 +215,16 @@ public class MainFrame extends ActivityGroup {
 
 	}
 
+	/**
+	 * 初始化控件的颜色
+	 * */
+	private void initBottemBtn() {
+		mMyBottemSearchTxt.setTextColor(Color.parseColor("#000000"));
+		mMyBottemTuanTxt.setTextColor(Color.parseColor("#000000"));
+		mMyBottemMyTxt.setTextColor(Color.parseColor("#000000"));
+		mMyBottemMoreTxt.setTextColor(Color.parseColor("#000000"));
+	}
+	
 	/**
 	 * 返回按钮的监听，用来询问用户是否退出程序
 	 * */
