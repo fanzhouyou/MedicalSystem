@@ -6,11 +6,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 
-/**
- * @Description:TODO
- * @author:liwei
- * @time:2015-2-5 обнГ9:57:07
- */
 public class Set extends Activity {
 
 	/*

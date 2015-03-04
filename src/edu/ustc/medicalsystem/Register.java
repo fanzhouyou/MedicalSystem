@@ -6,11 +6,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Window;
 
-/**
- * @Description:TODO
- * @author:liwei
- * @time:2015-2-5 обнГ7:55:11
- */
 public class Register extends Activity {
 
 	/*

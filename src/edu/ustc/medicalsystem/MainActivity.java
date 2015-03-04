@@ -13,11 +13,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/**
- * @Description:主界面（登录界面）
- * @author:liwei
- * @time:2015-2-5 下午7:22:09
- */
 public class MainActivity extends Activity {
 
 	private Button loginBtn;
