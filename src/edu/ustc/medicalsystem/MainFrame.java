@@ -21,11 +21,7 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-/**
- * @Description:主框架界面（页面底部四个导航栏）
- * @author:liwei
- * @time:2015-2-5 下午7:25:36
- */
+
 public class MainFrame extends ActivityGroup {
 
 	private LinearLayout doctorBtn, pharmacistBtn, stateBtn, setBtn;
